@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#4F6BED</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#DDE3FF</color>
+    <color name="on_primary_container">#0B1B5C</color>
+
+    <color name="planner_background">#F7F8FC</color>
+    <color name="planner_surface">#FFFFFF</color>
+    <color name="planner_text">#1B1B1F</color>
+    <color name="planner_text_secondary">#5B5D6B</color>
+
+    <!-- Dashboard card colors -->
+    <color name="card_tasks">#E3E8FF</color>
+    <color name="card_exams">#FFE3E6</color>
+    <color name="card_schedule">#DFF5E8</color>
 </resources>
