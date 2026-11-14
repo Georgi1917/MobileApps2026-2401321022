@@ -19,8 +19,31 @@
     <string name="open_exams">Open exams</string>
     <string name="open_schedule">Open schedule</string>
 
-    <string name="tasks_empty">No tasks yet. They will appear here.</string>
+    <string name="tasks_empty">No tasks yet. Tap “Add task” to create your first one.</string>
     <string name="exams_empty">No exams yet. They will appear here.</string>
     <string name="schedule_empty">Your weekly schedule will appear here.</string>
     <string name="settings_info">The app theme follows your phone\'s light/dark mode setting.</string>
+
+    <string name="add_task">Add task</string>
+    <string name="edit_task">Edit task</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_subject">Subject</string>
+    <string name="hint_deadline">Deadline</string>
+    <string name="label_priority">Priority</string>
+    <string name="priority_low">Low</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_high">High</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="delete_task_title">Delete task?</string>
+    <string name="delete_task_message">“%1$s” will be removed permanently.</string>
+    <string name="delete_task_description">Delete task</string>
+    <string name="error_title_required">Please enter a title</string>
+    <string name="task_saved">Task saved</string>
+    <string name="no_subject">No subject</string>
+    <string name="no_deadline">No deadline</string>
+    <string name="due_date">Due: %1$s</string>
+
 </resources>

@@ -14,4 +14,8 @@
     <color name="card_tasks">#E3E8FF</color>
     <color name="card_exams">#FFE3E6</color>
     <color name="card_schedule">#DFF5E8</color>
+
+    <color name="priority_high">#E53935</color>
+    <color name="priority_medium">#FB8C00</color>
+    <color name="priority_low">#43A047</color>
 </resources>

@@ -22,6 +22,7 @@
         </activity>
 
         <activity android:name=".TasksActivity" android:exported="false" />
+        <activity android:name=".TaskFormActivity" android:exported="false" />
         <activity android:name=".ExamsActivity" android:exported="false" />
         <activity android:name=".ScheduleActivity" android:exported="false" />
         <activity android:name=".SettingsActivity" android:exported="false" />
