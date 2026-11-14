@@ -1,4 +1,4 @@
-package bg.uni_plovdiv.fmi.my_project
+package bg.uni_plovdiv.fmi.my_project.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

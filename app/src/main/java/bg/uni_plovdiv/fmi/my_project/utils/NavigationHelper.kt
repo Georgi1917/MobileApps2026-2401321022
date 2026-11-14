@@ -1,7 +1,13 @@
-package bg.uni_plovdiv.fmi.my_project
+package bg.uni_plovdiv.fmi.my_project.utils
 
 import android.app.Activity
 import android.content.Intent
+import bg.uni_plovdiv.fmi.my_project.R
+import bg.uni_plovdiv.fmi.my_project.ui.exams.ExamsActivity
+import bg.uni_plovdiv.fmi.my_project.ui.main.MainActivity
+import bg.uni_plovdiv.fmi.my_project.ui.schedule.ScheduleActivity
+import bg.uni_plovdiv.fmi.my_project.ui.settings.SettingsActivity
+import bg.uni_plovdiv.fmi.my_project.ui.tasks.TasksActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 // Connects the bottom navigation bar to the 5 screens using simple Intents

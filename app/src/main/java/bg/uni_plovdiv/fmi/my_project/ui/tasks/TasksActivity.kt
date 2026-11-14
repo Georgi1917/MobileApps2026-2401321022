@@ -1,4 +1,4 @@
-package bg.uni_plovdiv.fmi.my_project
+package bg.uni_plovdiv.fmi.my_project.ui.tasks
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,11 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import bg.uni_plovdiv.fmi.my_project.R
+import bg.uni_plovdiv.fmi.my_project.data.AppDatabase
+import bg.uni_plovdiv.fmi.my_project.data.Task
+import bg.uni_plovdiv.fmi.my_project.data.TaskDao
+import bg.uni_plovdiv.fmi.my_project.utils.setupBottomNavigation
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton

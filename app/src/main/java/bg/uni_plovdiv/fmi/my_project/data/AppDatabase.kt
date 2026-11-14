@@ -1,4 +1,4 @@
-package bg.uni_plovdiv.fmi.my_project
+package bg.uni_plovdiv.fmi.my_project.data
 
 import android.content.Context
 import androidx.room.Database

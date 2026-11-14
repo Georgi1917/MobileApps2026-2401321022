@@ -1,4 +1,4 @@
-package bg.uni_plovdiv.fmi.my_project
+package bg.uni_plovdiv.fmi.my_project.data
 
 import androidx.room.Dao
 import androidx.room.Delete

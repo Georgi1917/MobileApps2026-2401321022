@@ -1,16 +1,18 @@
-package bg.uni_plovdiv.fmi.my_project
+package bg.uni_plovdiv.fmi.my_project.ui.schedule
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import bg.uni_plovdiv.fmi.my_project.R
+import bg.uni_plovdiv.fmi.my_project.utils.setupBottomNavigation
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class ExamsActivity : AppCompatActivity() {
+class ScheduleActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_exams)
+        setContentView(R.layout.activity_schedule)
 
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottomNavigation)
-        setupBottomNavigation(this, bottomNavigation, R.id.nav_exams)
+        setupBottomNavigation(this, bottomNavigation, R.id.nav_schedule)
     }
 }

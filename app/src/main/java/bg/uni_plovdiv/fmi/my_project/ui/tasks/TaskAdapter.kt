@@ -1,4 +1,4 @@
-package bg.uni_plovdiv.fmi.my_project
+package bg.uni_plovdiv.fmi.my_project.ui.tasks
 
 import android.graphics.Paint
 import android.view.LayoutInflater
@@ -9,6 +9,8 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import bg.uni_plovdiv.fmi.my_project.R
+import bg.uni_plovdiv.fmi.my_project.data.Task
 
 // Shows the list of tasks. The Activity decides what happens on each click.
 class TaskAdapter(

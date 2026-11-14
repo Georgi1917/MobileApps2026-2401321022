@@ -1,9 +1,14 @@
-package bg.uni_plovdiv.fmi.my_project
+package bg.uni_plovdiv.fmi.my_project.ui.main
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import bg.uni_plovdiv.fmi.my_project.ui.exams.ExamsActivity
+import bg.uni_plovdiv.fmi.my_project.R
+import bg.uni_plovdiv.fmi.my_project.ui.schedule.ScheduleActivity
+import bg.uni_plovdiv.fmi.my_project.ui.tasks.TasksActivity
+import bg.uni_plovdiv.fmi.my_project.utils.setupBottomNavigation
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.button.MaterialButton
 import java.text.SimpleDateFormat

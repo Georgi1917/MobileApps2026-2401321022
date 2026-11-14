@@ -1,10 +1,14 @@
-package bg.uni_plovdiv.fmi.my_project
+package bg.uni_plovdiv.fmi.my_project.ui.tasks
 
 import android.app.DatePickerDialog
 import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import bg.uni_plovdiv.fmi.my_project.R
+import bg.uni_plovdiv.fmi.my_project.data.AppDatabase
+import bg.uni_plovdiv.fmi.my_project.data.Task
+import bg.uni_plovdiv.fmi.my_project.data.TaskDao
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.chip.ChipGroup
 import com.google.android.material.textfield.TextInputEditText
