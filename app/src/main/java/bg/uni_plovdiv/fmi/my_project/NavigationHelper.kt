@@ -34,6 +34,9 @@ fun setupBottomNavigation(
             intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT)
             activity.startActivity(intent)
         }
-        true
+
+        // false = do not move the highlight on THIS screen.
+        // The screen we open highlights its own item.
+        false
     }
 }
