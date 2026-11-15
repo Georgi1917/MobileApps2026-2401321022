@@ -24,6 +24,7 @@
         <activity android:name=".ui.tasks.TasksActivity" android:exported="false" />
         <activity android:name=".ui.tasks.TaskFormActivity" android:exported="false" />
         <activity android:name=".ui.exams.ExamsActivity" android:exported="false" />
+        <activity android:name=".ui.exams.ExamFormActivity" android:exported="false" />
         <activity android:name=".ui.schedule.ScheduleActivity" android:exported="false" />
         <activity android:name=".ui.settings.SettingsActivity" android:exported="false" />
 

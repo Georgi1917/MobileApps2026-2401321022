@@ -20,10 +20,11 @@
     <string name="open_schedule">Open schedule</string>
 
     <string name="tasks_empty">No tasks yet. Tap “Add task” to create your first one.</string>
-    <string name="exams_empty">No exams yet. They will appear here.</string>
+    <string name="exams_empty">No exams yet. Tap “Add exam” to create your first one.</string>
     <string name="schedule_empty">Your weekly schedule will appear here.</string>
     <string name="settings_info">The app theme follows your phone\'s light/dark mode setting.</string>
 
+    <!-- tasks stuff -->
     <string name="add_task">Add task</string>
     <string name="edit_task">Edit task</string>
     <string name="hint_title">Title</string>
@@ -45,5 +46,25 @@
     <string name="no_subject">No subject</string>
     <string name="no_deadline">No deadline</string>
     <string name="due_date">Due: %1$s</string>
+
+    <!-- exams stuff -->
+    <string name="add_exam">Add exam</string>
+    <string name="edit_exam">Edit exam</string>
+    <string name="hint_exam_date">Date</string>
+    <string name="hint_exam_time">Time</string>
+    <string name="hint_location">Location</string>
+    <string name="hint_notes">Notes</string>
+    <string name="delete_exam_title">Delete exam?</string>
+    <string name="delete_exam_message">“%1$s” will be removed permanently.</string>
+    <string name="delete_exam_description">Delete exam</string>
+    <string name="error_subject_required">Please enter a subject</string>
+    <string name="error_date_required">Please choose a date</string>
+    <string name="exam_saved">Exam saved</string>
+    <string name="no_time">No time set</string>
+    <string name="no_location">No location</string>
+    <string name="exam_today">Today!</string>
+    <string name="exam_tomorrow">Tomorrow</string>
+    <string name="exam_in_days">In %1$d days</string>
+    <string name="exam_passed">Finished</string>
 
 </resources>
