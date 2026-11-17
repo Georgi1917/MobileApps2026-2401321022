@@ -107,4 +107,41 @@
     <string name="day_sat">Sat</string>
     <string name="day_sun">Sun</string>
 
+    <!-- Dashboard -->
+    <string name="stat_total">Total</string>
+    <string name="stat_completed">Completed</string>
+    <string name="stat_pending">Pending</string>
+    <string name="progress_completed">%1$d%% completed</string>
+    <string name="section_closest_deadlines">Closest deadlines</string>
+    <string name="section_upcoming_exams">Upcoming exams</string>
+    <string name="no_upcoming_deadlines">No pending deadlines. Nice work!</string>
+    <string name="no_upcoming_exams">No upcoming exams.</string>
+    <string name="dashboard_item_line">• %1$s · %2$s</string>
+    <string name="overdue_label">(overdue)</string>
+    <string name="view_statistics">View statistics</string>
+
+    <!-- Statistics -->
+    <string name="statistics_title">Statistics</string>
+    <string name="back">Back</string>
+    <string name="stat_total_tasks">Total tasks</string>
+    <string name="stat_completed_tasks">Completed tasks</string>
+    <string name="stat_pending_tasks">Pending tasks</string>
+    <string name="stat_overdue_tasks">Overdue tasks</string>
+    <string name="stat_total_exams">Upcoming exams</string>
+    <string name="stat_completion">Task completion</string>
+
+    <!-- Settings -->
+    <string name="settings_theme_title">Theme</string>
+    <string name="settings_theme_description">Choose how Student Planner looks.</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System default</string>
+
+    <!-- Friendly date texts -->
+    <string name="friendly_today">Today</string>
+    <string name="friendly_tomorrow">Tomorrow</string>
+    <string name="friendly_in_days">In %1$d days</string>
+    <string name="friendly_overdue_one">1 day overdue</string>
+    <string name="friendly_overdue_days">%1$d days overdue</string>
+
 </resources>

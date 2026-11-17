@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name=".StudentPlannerApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -28,6 +29,7 @@
         <activity android:name=".ui.schedule.ScheduleActivity" android:exported="false" />
         <activity android:name=".ui.schedule.ScheduleFormActivity" android:exported="false" />
         <activity android:name=".ui.settings.SettingsActivity" android:exported="false" />
+        <activity android:name=".ui.statistics.StatisticsActivity" android:exported="false" />
 
     </application>
 
