@@ -9,11 +9,16 @@ import androidx.sqlite.db.SupportSQLiteDatabase
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
-@Database(entities = [Task::class, Exam::class], version = 2, exportSchema = false)
+@Database(
+    entities = [Task::class, Exam::class, ScheduleItem::class],
+    version = 3,
+    exportSchema = false
+)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun taskDao(): TaskDao
     abstract fun examDao(): ExamDao
+    abstract fun scheduleDao(): ScheduleDao
 
     companion object {
         private var instance: AppDatabase? = null
@@ -37,6 +42,22 @@ abstract class AppDatabase : RoomDatabase() {
             }
         }
 
+        // Version 2 -> 3: adds the schedule table and keeps tasks and exams
+        private val MIGRATION_2_3 = object : Migration(2, 3) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL(
+                    "CREATE TABLE IF NOT EXISTS `schedule_items` (" +
+                            "`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " +
+                            "`subject` TEXT NOT NULL, " +
+                            "`dayOfWeek` INTEGER NOT NULL, " +
+                            "`startTime` TEXT NOT NULL, " +
+                            "`endTime` TEXT NOT NULL, " +
+                            "`room` TEXT NOT NULL, " +
+                            "`teacher` TEXT NOT NULL)"
+                )
+            }
+        }
+
         // Returns the same database object every time (only one is needed)
         fun getDatabase(context: Context): AppDatabase {
             return instance ?: synchronized(this) {
@@ -45,7 +66,7 @@ abstract class AppDatabase : RoomDatabase() {
                     AppDatabase::class.java,
                     "student_planner_db"
                 )
-                    .addMigrations(MIGRATION_1_2)
+                    .addMigrations(MIGRATION_1_2, MIGRATION_2_3)
                     .build()
                 instance = newInstance
                 newInstance

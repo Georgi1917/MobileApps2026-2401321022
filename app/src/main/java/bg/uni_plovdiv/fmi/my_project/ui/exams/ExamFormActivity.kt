@@ -122,7 +122,7 @@ class ExamFormActivity : AppCompatActivity() {
             // Always saved as HH:mm so it is easy to sort
             selectedTime = String.format(Locale.US, "%02d:%02d", pickedHour, pickedMinute)
             editExamTime.setText(selectedTime)
-        }, hour, minute, DateFormat.is24HourFormat(this))
+        }, hour, minute, true)
         timePicker.show()
     }
 
