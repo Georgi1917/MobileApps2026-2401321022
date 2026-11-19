@@ -24,12 +24,18 @@
 
         <activity android:name=".ui.tasks.TasksActivity" android:exported="false" />
         <activity android:name=".ui.tasks.TaskFormActivity" android:exported="false" />
+        <activity android:name=".ui.tasks.TaskQrActivity" android:exported="false" />
         <activity android:name=".ui.exams.ExamsActivity" android:exported="false" />
         <activity android:name=".ui.exams.ExamFormActivity" android:exported="false" />
         <activity android:name=".ui.schedule.ScheduleActivity" android:exported="false" />
         <activity android:name=".ui.schedule.ScheduleFormActivity" android:exported="false" />
         <activity android:name=".ui.settings.SettingsActivity" android:exported="false" />
         <activity android:name=".ui.statistics.StatisticsActivity" android:exported="false" />
+
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            tools:replace="screenOrientation" />
 
     </application>
 

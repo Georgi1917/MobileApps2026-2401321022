@@ -144,4 +144,21 @@
     <string name="friendly_overdue_one">1 day overdue</string>
     <string name="friendly_overdue_days">%1$d days overdue</string>
 
+    <!-- QR codes -->
+    <string name="share_task_qr">Share Task as QR</string>
+    <string name="qr_screen_title">Task QR code</string>
+    <string name="qr_hint">On the other phone, open Tasks and tap “Scan QR”.</string>
+    <string name="qr_error_too_long">This task is too long for a QR code. Try a shorter description.</string>
+    <string name="scan_qr">Scan QR</string>
+    <string name="scan_prompt">Point the camera at a Student Planner task QR code</string>
+    <string name="camera_permission_needed">Camera permission is needed to scan QR codes</string>
+    <string name="qr_invalid_title">Invalid QR code</string>
+    <string name="qr_invalid_message">This QR code does not contain a Student Planner task.</string>
+    <string name="ok">OK</string>
+    <string name="import_task_title">Import this task?</string>
+    <string name="import_preview">Title: %1$s\nSubject: %2$s\nDeadline: %3$s\nPriority: %4$s\n\nDescription:\n%5$s</string>
+    <string name="import_task">Import</string>
+    <string name="task_imported">Task imported</string>
+    <string name="no_description">No description</string>
+
 </resources>

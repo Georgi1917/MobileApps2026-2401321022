@@ -15,6 +15,8 @@ import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import java.util.Calendar
 import java.util.Locale
+import android.content.Intent
+import android.view.View
 
 class TaskFormActivity : AppCompatActivity() {
 
@@ -47,6 +49,7 @@ class TaskFormActivity : AppCompatActivity() {
         editDeadline = findViewById(R.id.editDeadline)
         chipGroupPriority = findViewById(R.id.chipGroupPriority)
         val btnSave = findViewById<MaterialButton>(R.id.btnSave)
+        val btnShareQr = findViewById<MaterialButton>(R.id.btnShareQr)
 
         taskDao = AppDatabase.getDatabase(this).taskDao()
 
@@ -54,11 +57,13 @@ class TaskFormActivity : AppCompatActivity() {
         taskId = intent.getIntExtra(EXTRA_TASK_ID, 0)
         if (taskId != 0) {
             tvFormTitle.text = getString(R.string.edit_task)
+            btnShareQr.visibility = View.VISIBLE
             loadTask()
         }
 
         editDeadline.setOnClickListener { showDatePicker() }
         btnSave.setOnClickListener { saveTask() }
+        btnShareQr.setOnClickListener { shareTaskAsQr() }
     }
 
     // Load the task from the database and fill the form
@@ -112,6 +117,24 @@ class TaskFormActivity : AppCompatActivity() {
             R.id.chipHigh -> "High"
             else -> "Medium"
         }
+    }
+
+    // Opens the QR screen with the task information that is currently in the form
+    private fun shareTaskAsQr() {
+        val title = editTitle.text.toString().trim()
+        if (title.isEmpty()) {
+            layoutTitle.error = getString(R.string.error_title_required)
+            return
+        }
+        layoutTitle.error = null
+
+        val intent = Intent(this, TaskQrActivity::class.java)
+        intent.putExtra(TaskQrActivity.EXTRA_TITLE, title)
+        intent.putExtra(TaskQrActivity.EXTRA_SUBJECT, editSubject.text.toString().trim())
+        intent.putExtra(TaskQrActivity.EXTRA_DESCRIPTION, editDescription.text.toString().trim())
+        intent.putExtra(TaskQrActivity.EXTRA_DEADLINE, selectedDeadline)
+        intent.putExtra(TaskQrActivity.EXTRA_PRIORITY, getSelectedPriority())
+        startActivity(intent)
     }
 
     // CREATE or UPDATE
